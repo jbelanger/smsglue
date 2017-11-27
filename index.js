@@ -2,6 +2,8 @@
 var fs = require('fs');
 var path = require('path').existsSync;
 
+fs.existsSync = require('path').existsSync;
+
 var cache      = path.resolve(process.env.CACHE || 'cache'),
     key        = path.resolve(process.env.CACHE || 'cache', 'key'),
     devices    = path.resolve(process.env.CACHE || 'cache', 'devices'),
