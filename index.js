@@ -1,6 +1,6 @@
 // Create cache directories
 var fs = require('fs');
-var path = require('path');
+var path = require('path').existsSync;
 
 var cache      = path.resolve(process.env.CACHE || 'cache'),
     key        = path.resolve(process.env.CACHE || 'cache', 'key'),
