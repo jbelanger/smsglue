@@ -1,6 +1,6 @@
 // Create cache directories
 var fs = require('fs');
-var path = require('path').existsSync;
+var path = require('path');
 
 fs.existsSync = require('path').existsSync;
 
